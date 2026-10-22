@@ -1,3 +1,4 @@
 ---
 - name: restart
-  service: name=solr state=restarted
+  become: yes
+  systemd: name=solr state=restarted daemon_reload=yes

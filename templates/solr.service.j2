@@ -1,0 +1,15 @@
+[Unit]
+Description=Apache Solr
+After=network.target
+
+[Service]
+Type=simple
+User={{ solr_user }}
+Environment=SOLR_INCLUDE={{ solr_var_path }}/solr.in.sh
+ExecStart={{ solr_path }}/bin/solr start -f
+LimitNOFILE=65000
+LimitNPROC=65000
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
