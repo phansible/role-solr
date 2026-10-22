@@ -1,6 +1,6 @@
 # Phansible Role: Solr
 
-[![Build Status](https://travis-ci.org/phansible/role-solr.svg?branch=master)](https://travis-ci.org/phansible/role-solr)
+[![CI](https://github.com/phansible/role-solr/actions/workflows/ci.yml/badge.svg)](https://github.com/phansible/role-solr/actions/workflows/ci.yml)
 
 An Ansible Role that installs [Solr](http://lucene.apache.org/solr/) on Ubuntu specifically created with [Phansible](http://phansible.com/) in mind.
 
